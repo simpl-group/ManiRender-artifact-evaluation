@@ -1,0 +1,17 @@
+dash
+dash_cytoscape
+plotly
+supervision
+numba==0.56.4
+frozendict
+ordered-set
+pulp==2.8.0
+gekko
+onnx
+pycocotools
+onnxruntime==1.16.0
+opencv-python==4.5.5.64
+lark
+prettytable
+Pillow
+openai

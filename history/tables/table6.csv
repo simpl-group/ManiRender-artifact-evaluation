@@ -1,0 +1,5 @@
+Model,#T,#S,#P,Time (s)
+ManiRender w/o Diff & Abst,70,28,2,25.0
+ManiRender w/o Diff,30,48,22,19.7
+ManiRender w/o Abst,1,52,47,13.7
+ManiRender,0,98,2,7.4

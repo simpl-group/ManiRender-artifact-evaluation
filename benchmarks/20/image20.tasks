@@ -1,0 +1,5 @@
+{"id": 1, "description": "recolor players in red", "positive": [1, 6, 8, 11], "negative": [14, 20, 21, 23, 24], "action": ["recolor", "red"], "parameters": {}, "groundtruth": [1, 2, 3, 4, 6, 8, 9, 11, 12, 13]}
+{"id": 2, "description": "blur nonplayers", "positive": [5, 7, 10, 14, 24], "negative": [2, 6, 8, 11], "action": ["blur"], "parameters": {}, "groundtruth": [5, 7, 10, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]}
+{"id": 3, "description": "highlight the player holding the ball", "positive": [1], "negative": [5, 6, 12, 18], "action": ["highlight"], "parameters": {}, "groundtruth": [1]}
+{"id": 4, "description": "remove players and referees", "positive": [1, 2, 6, 8, 10, 11, 14], "negative": [5, 7, 15, 18, 19, 20, 21, 24], "action": ["remove"], "parameters": {}, "groundtruth": [1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14]}
+{"id": 5, "description": "highlight the player holding the ball and referees", "positive": [1, 10, 14], "negative": [3, 4, 5, 8, 15, 18, 23], "action": ["highlight"], "parameters": {}, "groundtruth": [1, 10, 14]}

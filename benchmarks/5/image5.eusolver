@@ -1,0 +1,4 @@
+{"id": 1, "program": "(Union (Intersect (Complement (AgeEq x 36)) (HoldObjectsInFront x)) (AgeEq x 46))", "time": [8.3535]}
+{"id": 2, "program": "(Union (Complement (Union (AgeEq x 46) (HoldObjectsInFront x))) (AgeEq x 36))", "time": [28.1017]}
+{"id": 3, "program": "(Union (Complement (Union (Union (AgeEq x 46) (Shorts x)) (HoldObjectsInFront x))) (AgeEq x 36))", "time": [165.3771]}
+{"id": 4, "program": "(Union (Intersect (Union (Orientation x \"Side\") (HoldObjectsInFront x)) (Boots x)) (AgeEq x 31))", "time": [42.0267]}

@@ -1,0 +1,6 @@
+Task,#,#T-EUSolver,#S-EUSolver,#P-EUSolver,Time(s)-EUSolver,#T-ImageEye,#S-ImageEye,#P-ImageEye,Time(s)-ImageEye,#T-ManiRender,#S-ManiRender,#P-ManiRender,Time(s)-ManiRender
+Text,10,1,2,7,4.3,4,4,2,1.4,0,10,0,3.3
+Vehicle,20,9,0,11,76.4,16,4,0,16.7,0,20,0,1.8
+Person,60,26,2,32,25.9,33,13,14,21.3,0,58,2,10.9
+Mix,10,1,3,6,0.6,1,1,8,7.6,0,10,0,2.4
+Total,100,37,7,56,28.0,54,22,24,15.6,0,98,2,7.4

@@ -1,0 +1,6 @@
+Task,#,#S-GPT-4o,#D-GPT-4o,#C-GPT-4o,#S-ManiRender,#D-ManiRender,#C-ManiRender
+Text,10,0,0,1,10,10,10
+Vehicle,20,0,1,5,20,20,20
+Person,60,15,4,24,58,60,60
+Mix,10,0,0,1,10,10,10
+Total,100,15,5,31,98,100,100

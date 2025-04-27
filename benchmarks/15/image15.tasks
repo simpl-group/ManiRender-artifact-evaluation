@@ -1,0 +1,5 @@
+{"id": 1, "description": "Remove pedestrians walking on street", "positive": [2, 3, 4, 10, 11, 12, 13, 15], "negative": [1, 7, 8, 17, 18, 19, 24, 20], "action": ["remove"], "parameters": {}, "groundtruth": [2, 3, 4, 5, 6, 9, 10, 11, 12, 13, 14, 15, 16]}
+{"id": 2, "description": "Find out Male pedestrians walking on street", "positive": [10, 13, 14, 16], "negative": [4, 7, 8, 12, 15, 17, 18], "action": ["highlight"], "parameters": {}, "groundtruth": [3, 5, 10, 11, 13, 14, 16]}
+{"id": 3, "description": "Mosaic Female pedestrians walking on street", "positive": [2, 4, 6, 12, 15], "negative": [1, 7, 8, 17, 19, 24, 20], "action": ["mosaic"], "parameters": {}, "groundtruth": [2, 4, 6, 9, 12, 15]}
+{"id": 4, "description": "Blankout pedestrians waiting at a traffic light", "positive": [8, 17, 18, 19], "negative": [1, 2, 6, 11, 12, 13, 16], "action": ["blankout"], "parameters": {}, "groundtruth": [7, 8, 17, 18, 19]}
+{"id": 5, "description": "Find out Male pedestrians waiting at a traffic light", "positive": [7, 8], "negative": [5, 6, 10, 11, 13, 14, 16], "action": ["highlight"], "parameters": {}, "groundtruth": [7, 8]}

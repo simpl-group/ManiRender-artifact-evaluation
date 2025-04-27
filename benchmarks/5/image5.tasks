@@ -1,0 +1,5 @@
+{"id": 1, "description": "Find out people on parade", "positive": [1, 2, 3, 4, 5, 6, 9], "negative": [7, 8, 10, 11, 12, 13, 14, 17, 19], "action": ["highlight"], "parameters": {}, "groundtruth": [1, 2, 3, 4, 5, 6, 9]}
+{"id": 2, "description": "Mosaic people not on parade", "positive": [7, 8, 10, 14, 15, 17, 19], "negative": [1, 2, 3, 4, 5, 6, 9], "action": ["mosaic"], "parameters": {}, "groundtruth": [7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]}
+{"id": 3, "description": "Find out people on avenue", "positive": [1, 2, 3, 5, 6, 9, 14], "negative": [7, 8, 11, 12, 13, 16, 17, 19], "action": ["highlight"], "parameters": {}, "groundtruth": [1, 2, 3, 4, 5, 6, 9, 14]}
+{"id": 4, "description": "Remove Males on road sides", "positive": [7, 8, 10, 11, 12, 13, 16, 17, 19], "negative": [1, 2, 3, 4, 5, 6, 9, 14, 15, 18], "action": ["remove"], "parameters": {}, "groundtruth": [7, 8, 10, 11, 12, 13, 16, 17, 19]}
+{"id": 5, "description": "Blur standing people on road sides", "positive": [7, 10, 11, 12, 13, 15, 16, 17, 18, 19], "negative": [1, 2, 3, 4, 5, 6, 8, 9, 14], "action": ["blur"], "parameters": {}, "groundtruth": [7, 10, 11, 12, 13, 15, 16, 17, 18, 19]}
