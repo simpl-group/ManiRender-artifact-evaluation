@@ -9,11 +9,12 @@ import itertools
 import re
 from constants import (
     DATASET_DIR, TIMEOUT,
-    PERSON, TEXT, VEHICLE, MIX, CODOMAINS, CLS2IDS, PROJECT_DIR
+    PERSON, TEXT, VEHICLE, MIX, CODOMAINS, PROJECT_DIR
 )
 from lark_parser import Parser
 from prettytable import PrettyTable
 import numpy as np
+from benchmarks import DIR as BENCHMARK_DIR
 
 DIR = os.path.dirname(__file__)
 
@@ -41,6 +42,29 @@ manirender_file = os.path.join(PROJECT_DIR, args.directory, "results.diff-abst.m
 chatgpt4o_file = os.path.join(PROJECT_DIR, args.directory, "results.gpt4o")
 scalability_attr_file = os.path.join(PROJECT_DIR, args.directory, "scalability.attr")
 scalability_range_file = os.path.join(PROJECT_DIR, args.directory, "scalability.range")
+
+
+def gen_cls2ids():
+    CLS2IDS = {TEXT: [], VEHICLE: [], PERSON: [], MIX: []}
+    task_idx = 0
+    for idx in range(20):
+        obj_file = os.path.join(BENCHMARK_DIR, str(idx + 1), f"image{idx + 1}.objs")
+        with open(obj_file, 'r') as reader:
+            idx2cls = {line["id"]: line["cls"] for line in map(json.loads, reader)}
+        task_file = os.path.join(BENCHMARK_DIR, str(idx + 1), f"image{idx + 1}.tasks")
+        with open(task_file, 'r') as reader:
+            for line in map(json.loads, reader):
+                classes = [idx2cls[i] for i in line["positive"] + line["negative"]]
+                classes = list(set(classes))
+                if len(classes) > 1:
+                    CLS2IDS[MIX].append(task_idx)
+                else:
+                    CLS2IDS[classes[0]].append(task_idx)
+                task_idx += 1
+    return CLS2IDS
+
+
+CLS2IDS = gen_cls2ids()
 
 
 def beautify_lattice_size(lattice_size):
@@ -458,7 +482,6 @@ def stats_prompt():
 
     fields1, rows1 = stats_gpt(chatgpt4o_file, "GPT-4o")
     fields2, rows2 = stats_manirender(manirender_file, "ManiRender")
-    # pprint_tables(tables=[gpt_table, manirender_table])
 
     CSV_FILE = os.path.join(OUT_DIR, "table5.csv")
     with open(CSV_FILE, 'w') as csvfile:

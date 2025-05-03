@@ -52,6 +52,7 @@ NODE_LABEL_FUNCS = {
         if isinstance(x, List) else x,
 }
 
+# attributes and ranges
 CODOMAINS = {
     VEHICLE: {
         'Color': ["Yellow", "Orange", "Green", "Gray", "Red", "Blue", "White", "Golden", "Brown", "Black"],
@@ -81,15 +82,6 @@ CODOMAINS = {
         "In": [True, False],  # dynamic
         "Regex": [True, False],  # dynamic
     }
-}
-
-CLS2IDS = {
-    'Text': [6, 7, 17, 33, 34, 35, 36, 37, 38, 39],
-    'Vehicle': [0, 1, 2, 3, 4, 5, 40, 41, 42, 43, 53, 54, 55, 80, 81, 82, 83, 84, 85, 86],
-    'Person': [8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 44, 45, 46,
-               47, 48, 49, 50, 51, 52, 56, 57, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 71, 73, 74, 75, 87, 88, 89, 90,
-               91, 92, 93, 94, 95, 96, 97, 98, 99],
-    'Mix': [20, 21, 58, 59, 70, 72, 76, 77, 78, 79],
 }
 
 
