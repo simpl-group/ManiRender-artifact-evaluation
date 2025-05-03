@@ -144,6 +144,15 @@ python -m rqs.eval --directory history
 python -m rqs.plots --directory history
 ```
 
+## 🖱️ GUI (demo usage only)
+
+```shell
+python -m demo.__main__ --gpu 0 # use CPU
+#python -m demo.__main__ --gpu 1 # use GPU
+```
+
+![demo.png](assets/demo.png)
+
 ## 🖥️ Other resources
 
 - [exec_actions.py](exec_actions.py): manipulate images using CV tools (*set performance-critical configuration to reach
