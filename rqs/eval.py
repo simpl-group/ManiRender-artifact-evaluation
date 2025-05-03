@@ -363,8 +363,6 @@ def stats_lattice(file, title, only_total=False):
 
 
 def stats_cmp_gts():
-    stats_gts = [[10, 18.5, 20.4, 38], [11, 26.0, 30.8, 53], [10, 31.0, 37.8, 145], [10, 19.0, 19.1, 36],
-                 [10, 27.0, 32.7, 145]]
     stats_syn_progs = {}
     with open(manirender_file, 'r') as reader:
         prog_sizes = []
@@ -379,10 +377,9 @@ def stats_cmp_gts():
     CSV_FILE = os.path.join(OUT_DIR, "table3.csv")
     with open(CSV_FILE, 'w') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(
-            ["Task", "#", "Syn-Min", "Syn-Med", "Syn-Avg", "Syn-Max", "GT-Min", "GT-Med", "GT-Avg", "GT-Max"])
+        writer.writerow(["Task", "#", "Syn-Min", "Syn-Med", "Syn-Avg", "Syn-Max"])
         for idx, (cls, stats) in enumerate(stats_syn_progs.items()):
-            writer.writerow([cls] + stats + stats_gts[idx])
+            writer.writerow([cls] + stats)
 
 
 def stats_baselines():
