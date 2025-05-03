@@ -170,3 +170,8 @@ benchmarks/*/test.py
 demo/test.py
 cv_tools/configs/checkpoints
 benchmarks/*/.sobjs
+
+history/*.csv
+history/*.pdf
+rqs/*.csv
+rqs/*.pdf
